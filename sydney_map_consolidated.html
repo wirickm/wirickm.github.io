@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_abc13e7473c5c65c7957621c66a28ccf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_abc13e7473c5c65c7957621c66a28ccf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_abc13e7473c5c65c7957621c66a28ccf = L.map(
+                "map_abc13e7473c5c65c7957621c66a28ccf",
+                {
+                    center: [-33.8688, 151.2093],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1b8feb0eabb25e391ed36189b76b731f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1b8feb0eabb25e391ed36189b76b731f.addTo(map_abc13e7473c5c65c7957621c66a28ccf);
+        
+    
+            var marker_6b0dbc0e85b6284b1d06585ad0451c20 = L.marker(
+                [-33.9399, 151.1753],
+                {}
+            ).addTo(map_abc13e7473c5c65c7957621c66a28ccf);
+        
+    
+            var icon_06140134367bd11375a27f333781837e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b0dbc0e85b6284b1d06585ad0451c20.setIcon(icon_06140134367bd11375a27f333781837e);
+        
+    
+        var popup_c5662898bcb61b521fe5f06d4a013c94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c37892d473b3b0e4374827edea7c4ca = $(`<div id="html_5c37892d473b3b0e4374827edea7c4ca" style="width: 100.0%; height: 100.0%;">Sydney Airport (SYD)</div>`)[0];
+                popup_c5662898bcb61b521fe5f06d4a013c94.setContent(html_5c37892d473b3b0e4374827edea7c4ca);
+            
+        
+
+        marker_6b0dbc0e85b6284b1d06585ad0451c20.bindPopup(popup_c5662898bcb61b521fe5f06d4a013c94)
+        ;
+
+        
+    
+    
+            var marker_f879128f6f472a9fa4271dc07a5d4ed0 = L.marker(
+                [-33.8568, 151.2153],
+                {}
+            ).addTo(map_abc13e7473c5c65c7957621c66a28ccf);
+        
+    
+            var icon_eaa48b355b04be74f3f982e70d7fc328 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f879128f6f472a9fa4271dc07a5d4ed0.setIcon(icon_eaa48b355b04be74f3f982e70d7fc328);
+        
+    
+        var popup_359a977544281294473ce87baa337d9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_546b9bc9dedbab31e7e1a7ab6aab7745 = $(`<div id="html_546b9bc9dedbab31e7e1a7ab6aab7745" style="width: 100.0%; height: 100.0%;">Sydney Opera House (Opera House Tour, NYE Gala, Fireworks) Distance from SYD: 9.93 km</div>`)[0];
+                popup_359a977544281294473ce87baa337d9e.setContent(html_546b9bc9dedbab31e7e1a7ab6aab7745);
+            
+        
+
+        marker_f879128f6f472a9fa4271dc07a5d4ed0.bindPopup(popup_359a977544281294473ce87baa337d9e)
+        ;
+
+        
+    
+    
+            var marker_199820d519c1a5c4375f2b3a9933c808 = L.marker(
+                [-33.8523, 151.2108],
+                {}
+            ).addTo(map_abc13e7473c5c65c7957621c66a28ccf);
+        
+    
+            var icon_6f3fcfe4fd8c6261ca6681b19ec4317b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_199820d519c1a5c4375f2b3a9933c808.setIcon(icon_6f3fcfe4fd8c6261ca6681b19ec4317b);
+        
+    
+        var popup_78cc29c7cc41e59941f111a01a50dd64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e3ea2a799e1420c70303744ac9ae447 = $(`<div id="html_3e3ea2a799e1420c70303744ac9ae447" style="width: 100.0%; height: 100.0%;">Sydney Harbour Bridge (BridgeClimb) Distance from SYD: 10.26 km</div>`)[0];
+                popup_78cc29c7cc41e59941f111a01a50dd64.setContent(html_3e3ea2a799e1420c70303744ac9ae447);
+            
+        
+
+        marker_199820d519c1a5c4375f2b3a9933c808.bindPopup(popup_78cc29c7cc41e59941f111a01a50dd64)
+        ;
+
+        
+    
+    
+            var marker_639f891cad223b4e37c4fc70bd668955 = L.marker(
+                [-33.8908, 151.2743],
+                {}
+            ).addTo(map_abc13e7473c5c65c7957621c66a28ccf);
+        
+    
+            var icon_afd03792fee13b57987bef4720cb3561 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_639f891cad223b4e37c4fc70bd668955.setIcon(icon_afd03792fee13b57987bef4720cb3561);
+        
+    
+        var popup_8fa41060d014d2bfdbd2194978f710dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc27e2cf7f29883ac9433a7d5935bc3a = $(`<div id="html_bc27e2cf7f29883ac9433a7d5935bc3a" style="width: 100.0%; height: 100.0%;">Bondi Beach Distance from SYD: 10.65 km</div>`)[0];
+                popup_8fa41060d014d2bfdbd2194978f710dc.setContent(html_bc27e2cf7f29883ac9433a7d5935bc3a);
+            
+        
+
+        marker_639f891cad223b4e37c4fc70bd668955.bindPopup(popup_8fa41060d014d2bfdbd2194978f710dc)
+        ;
+
+        
+    
+    
+            var marker_26f044f9cdc410c80936fce985fa0fd8 = L.marker(
+                [-33.7969, 151.2874],
+                {}
+            ).addTo(map_abc13e7473c5c65c7957621c66a28ccf);
+        
+    
+            var icon_eec191eb5677eef3b70a66c4b1deba57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26f044f9cdc410c80936fce985fa0fd8.setIcon(icon_eec191eb5677eef3b70a66c4b1deba57);
+        
+    
+        var popup_88925042fafe564a64abd3646463f137 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad1ac0fda665d6020ec5c94ccc298b07 = $(`<div id="html_ad1ac0fda665d6020ec5c94ccc298b07" style="width: 100.0%; height: 100.0%;">Manly Beach Distance from SYD: 18.95 km</div>`)[0];
+                popup_88925042fafe564a64abd3646463f137.setContent(html_ad1ac0fda665d6020ec5c94ccc298b07);
+            
+        
+
+        marker_26f044f9cdc410c80936fce985fa0fd8.bindPopup(popup_88925042fafe564a64abd3646463f137)
+        ;
+
+        
+    
+    
+            var marker_7a01585b25a3f130bfdb37e3da6f433a = L.marker(
+                [-33.8615, 151.2111],
+                {}
+            ).addTo(map_abc13e7473c5c65c7957621c66a28ccf);
+        
+    
+            var icon_bd7758418fd7e89600b779c1c5c78b74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a01585b25a3f130bfdb37e3da6f433a.setIcon(icon_bd7758418fd7e89600b779c1c5c78b74);
+        
+    
+        var popup_d91c51caf6ee4b7b8dabddd59491387b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_449d52e070aaaa8c893d12b3c44e4d89 = $(`<div id="html_449d52e070aaaa8c893d12b3c44e4d89" style="width: 100.0%; height: 100.0%;">Circular Quay to Manly Ferry Distance from SYD: 9.31 km</div>`)[0];
+                popup_d91c51caf6ee4b7b8dabddd59491387b.setContent(html_449d52e070aaaa8c893d12b3c44e4d89);
+            
+        
+
+        marker_7a01585b25a3f130bfdb37e3da6f433a.bindPopup(popup_d91c51caf6ee4b7b8dabddd59491387b)
+        ;
+
+        
+    
+    
+            var marker_2440aa3efef1ee273c4cf7bf566ef98a = L.marker(
+                [-33.8642, 151.2166],
+                {}
+            ).addTo(map_abc13e7473c5c65c7957621c66a28ccf);
+        
+    
+            var icon_d7362096e1d7119968d21dbc26f918d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2440aa3efef1ee273c4cf7bf566ef98a.setIcon(icon_d7362096e1d7119968d21dbc26f918d6);
+        
+    
+        var popup_37ed9d0096ec5744aa4fcdeb36158d8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44e9999d7a00365f26be9c09ede891f2 = $(`<div id="html_44e9999d7a00365f26be9c09ede891f2" style="width: 100.0%; height: 100.0%;">Botanic Garden Foundation and Friends NYE Picnic Distance from SYD: 9.22 km</div>`)[0];
+                popup_37ed9d0096ec5744aa4fcdeb36158d8b.setContent(html_44e9999d7a00365f26be9c09ede891f2);
+            
+        
+
+        marker_2440aa3efef1ee273c4cf7bf566ef98a.bindPopup(popup_37ed9d0096ec5744aa4fcdeb36158d8b)
+        ;
+
+        
+    
+</script>
+</html>
