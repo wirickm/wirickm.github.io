@@ -1,3 +1,3 @@
 # Check this out
-https://github.com/wirickm/wirickm.github.io/blob/main/sydney_map_consolidated.html
-
+An interactive map of Sydney highlights and activities.
+https://wirickm.github.io/sydney_map_consolidated.html
