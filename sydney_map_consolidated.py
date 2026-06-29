@@ -17,17 +17,16 @@ locations = {
 sydney_map = folium.Map(location=[-33.8688, 151.2093], zoom_start=13)
 
 # Add the airport marker
-folium.Marker(syd_airport, popup='Sydney Airport (SYD)', icon=folium.Icon(color='red')).add_to(sydney_map)
+folium.Marker(syd_airport, popup="Sydney Airport (SYD)", icon=folium.Icon(color="red")).add_to(sydney_map)
 
 # Add markers for each unique location and calculate distance from the airport
 for name, coord in locations.items():
     distance = geodesic(syd_airport, coord).km
     folium.Marker(
         coord,
-        popup=f"{name}\nDistance from SYD: {distance:.2f} km",
+        popup=f"{name}<br>Distance from SYD: {distance:.2f} km",
         icon=folium.Icon(icon="info-sign")
     ).add_to(sydney_map)
 
 # Save the map as an HTML file
-sydney_map.save('sydney_map_consolidated.html')
-
+sydney_map.save("sydney_map_consolidated.html")
